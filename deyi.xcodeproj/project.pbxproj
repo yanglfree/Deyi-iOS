@@ -12,6 +12,10 @@
 		EC2368512111572700F486BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2368502111572700F486BA /* Assets.xcassets */; };
 		EC2368542111572700F486BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2368522111572700F486BA /* LaunchScreen.storyboard */; };
 		EC2368572111572700F486BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2368562111572700F486BA /* main.m */; };
+		EC23687A21115D4600F486BA /* YLNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23687921115D4600F486BA /* YLNetwork.m */; };
+		EC23687F2111992C00F486BA /* YLAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23687E2111992C00F486BA /* YLAPI.m */; };
+		EC23688221119B1200F486BA /* YLGlobalUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23688121119B1200F486BA /* YLGlobalUserInfo.m */; };
+		EC23688521119BEC00F486BA /* YLUserDefaultConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23688421119BEC00F486BA /* YLUserDefaultConst.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,15 @@
 		EC2368532111572700F486BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC2368552111572700F486BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC2368562111572700F486BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC23687821115D4600F486BA /* YLNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNetwork.h; sourceTree = "<group>"; };
+		EC23687921115D4600F486BA /* YLNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNetwork.m; sourceTree = "<group>"; };
+		EC23687C21115D8800F486BA /* DeyiPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeyiPrefixHeader.pch; sourceTree = "<group>"; };
+		EC23687D2111992C00F486BA /* YLAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLAPI.h; sourceTree = "<group>"; };
+		EC23687E2111992C00F486BA /* YLAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAPI.m; sourceTree = "<group>"; };
+		EC23688021119B1200F486BA /* YLGlobalUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLGlobalUserInfo.h; sourceTree = "<group>"; };
+		EC23688121119B1200F486BA /* YLGlobalUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLGlobalUserInfo.m; sourceTree = "<group>"; };
+		EC23688321119BEC00F486BA /* YLUserDefaultConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLUserDefaultConst.h; sourceTree = "<group>"; };
+		EC23688421119BEC00F486BA /* YLUserDefaultConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLUserDefaultConst.m; sourceTree = "<group>"; };
 		EC7CB3C380570173C24CFE23 /* Pods-deyi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deyi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deyi/Pods-deyi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +81,7 @@
 		EC2368462111572600F486BA /* deyi */ = {
 			isa = PBXGroup;
 			children = (
+				EC23687B21115D6C00F486BA /* Const */,
 				EC23687421115B0D00F486BA /* BBS */,
 				EC23686121115B0C00F486BA /* Categary */,
 				EC23685F21115B0C00F486BA /* Common */,
@@ -76,16 +90,17 @@
 				EC23685D21115B0C00F486BA /* Manager */,
 				EC23686621115B0D00F486BA /* My */,
 				EC23685E21115B0C00F486BA /* Network */,
-				EC23686E21115B0D00F486BA /* Resources */,
 				EC23686221115B0C00F486BA /* Store */,
 				EC23686A21115B0D00F486BA /* Timeline */,
 				EC23686F21115B0D00F486BA /* Util */,
+				EC23686E21115B0D00F486BA /* Resources */,
 				EC2368472111572600F486BA /* AppDelegate.h */,
 				EC2368482111572600F486BA /* AppDelegate.m */,
 				EC2368502111572700F486BA /* Assets.xcassets */,
 				EC2368522111572700F486BA /* LaunchScreen.storyboard */,
 				EC2368552111572700F486BA /* Info.plist */,
 				EC2368562111572700F486BA /* main.m */,
+				EC23687C21115D8800F486BA /* DeyiPrefixHeader.pch */,
 			);
 			path = deyi;
 			sourceTree = "<group>";
@@ -100,6 +115,10 @@
 		EC23685E21115B0C00F486BA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EC23687821115D4600F486BA /* YLNetwork.h */,
+				EC23687921115D4600F486BA /* YLNetwork.m */,
+				EC23687D2111992C00F486BA /* YLAPI.h */,
+				EC23687E2111992C00F486BA /* YLAPI.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -107,6 +126,8 @@
 		EC23685F21115B0C00F486BA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EC23688021119B1200F486BA /* YLGlobalUserInfo.h */,
+				EC23688121119B1200F486BA /* YLGlobalUserInfo.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -294,6 +315,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EC23687B21115D6C00F486BA /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				EC23688321119BEC00F486BA /* YLUserDefaultConst.h */,
+				EC23688421119BEC00F486BA /* YLUserDefaultConst.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
 		EDB378E19412B9CED5E74D8F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,8 +361,9 @@
 		EC23683C2111572600F486BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YL;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = Liang;
+				ORGANIZATIONNAME = hipie;
 				TargetAttributes = {
 					EC2368432111572600F486BA = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -415,6 +446,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC23688221119B1200F486BA /* YLGlobalUserInfo.m in Sources */,
+				EC23688521119BEC00F486BA /* YLUserDefaultConst.m in Sources */,
+				EC23687A21115D4600F486BA /* YLNetwork.m in Sources */,
+				EC23687F2111992C00F486BA /* YLAPI.m in Sources */,
 				EC2368572111572700F486BA /* main.m in Sources */,
 				EC2368492111572600F486BA /* AppDelegate.m in Sources */,
 			);
@@ -551,6 +586,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4MB2B6UD3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/deyi/DeyiPrefixHeader.pch";
 				INFOPLIST_FILE = deyi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,6 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4MB2B6UD3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/deyi/DeyiPrefixHeader.pch";
 				INFOPLIST_FILE = deyi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
