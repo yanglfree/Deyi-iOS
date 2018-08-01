@@ -7,25 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA6A324D4BA57BC16F30D1D5 /* libPods-deyi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A38297D4F9C363FD3498BA1 /* libPods-deyi.a */; };
 		EC2368492111572600F486BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2368482111572600F486BA /* AppDelegate.m */; };
-		EC23684C2111572600F486BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23684B2111572600F486BA /* ViewController.m */; };
-		EC23684F2111572600F486BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC23684D2111572600F486BA /* Main.storyboard */; };
 		EC2368512111572700F486BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2368502111572700F486BA /* Assets.xcassets */; };
 		EC2368542111572700F486BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2368522111572700F486BA /* LaunchScreen.storyboard */; };
 		EC2368572111572700F486BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2368562111572700F486BA /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A38297D4F9C363FD3498BA1 /* libPods-deyi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-deyi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98302274D955948A0D814F09 /* Pods-deyi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deyi.release.xcconfig"; path = "Pods/Target Support Files/Pods-deyi/Pods-deyi.release.xcconfig"; sourceTree = "<group>"; };
 		EC2368442111572600F486BA /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2368472111572600F486BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC2368482111572600F486BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EC23684A2111572600F486BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EC23684B2111572600F486BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EC23684E2111572600F486BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC2368502111572700F486BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC2368532111572700F486BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC2368552111572700F486BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC2368562111572700F486BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC7CB3C380570173C24CFE23 /* Pods-deyi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deyi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deyi/Pods-deyi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +32,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6A324D4BA57BC16F30D1D5 /* libPods-deyi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3191A7ED6F06BF4990783B8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A38297D4F9C363FD3498BA1 /* libPods-deyi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC23683B2111572600F486BA = {
 			isa = PBXGroup;
 			children = (
 				EC2368462111572600F486BA /* deyi */,
 				EC2368452111572600F486BA /* Products */,
+				EDB378E19412B9CED5E74D8F /* Pods */,
+				3191A7ED6F06BF4990783B8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +68,239 @@
 		EC2368462111572600F486BA /* deyi */ = {
 			isa = PBXGroup;
 			children = (
+				EC23687421115B0D00F486BA /* BBS */,
+				EC23686121115B0C00F486BA /* Categary */,
+				EC23685F21115B0C00F486BA /* Common */,
+				EC23686021115B0C00F486BA /* DB */,
+				EC23687021115B0D00F486BA /* Home */,
+				EC23685D21115B0C00F486BA /* Manager */,
+				EC23686621115B0D00F486BA /* My */,
+				EC23685E21115B0C00F486BA /* Network */,
+				EC23686E21115B0D00F486BA /* Resources */,
+				EC23686221115B0C00F486BA /* Store */,
+				EC23686A21115B0D00F486BA /* Timeline */,
+				EC23686F21115B0D00F486BA /* Util */,
 				EC2368472111572600F486BA /* AppDelegate.h */,
 				EC2368482111572600F486BA /* AppDelegate.m */,
-				EC23684A2111572600F486BA /* ViewController.h */,
-				EC23684B2111572600F486BA /* ViewController.m */,
-				EC23684D2111572600F486BA /* Main.storyboard */,
 				EC2368502111572700F486BA /* Assets.xcassets */,
 				EC2368522111572700F486BA /* LaunchScreen.storyboard */,
 				EC2368552111572700F486BA /* Info.plist */,
 				EC2368562111572700F486BA /* main.m */,
 			);
 			path = deyi;
+			sourceTree = "<group>";
+		};
+		EC23685D21115B0C00F486BA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EC23685E21115B0C00F486BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EC23685F21115B0C00F486BA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EC23686021115B0C00F486BA /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		EC23686121115B0C00F486BA /* Categary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categary;
+			sourceTree = "<group>";
+		};
+		EC23686221115B0C00F486BA /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				EC23686321115B0C00F486BA /* Controller */,
+				EC23686421115B0C00F486BA /* Model */,
+				EC23686521115B0C00F486BA /* View */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		EC23686321115B0C00F486BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC23686421115B0C00F486BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC23686521115B0C00F486BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC23686621115B0D00F486BA /* My */ = {
+			isa = PBXGroup;
+			children = (
+				EC23686721115B0D00F486BA /* Controller */,
+				EC23686821115B0D00F486BA /* Model */,
+				EC23686921115B0D00F486BA /* View */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		EC23686721115B0D00F486BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC23686821115B0D00F486BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC23686921115B0D00F486BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC23686A21115B0D00F486BA /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				EC23686B21115B0D00F486BA /* Controller */,
+				EC23686C21115B0D00F486BA /* Model */,
+				EC23686D21115B0D00F486BA /* View */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		EC23686B21115B0D00F486BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC23686C21115B0D00F486BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC23686D21115B0D00F486BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC23686E21115B0D00F486BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC23686F21115B0D00F486BA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EC23687021115B0D00F486BA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EC23687121115B0D00F486BA /* Controller */,
+				EC23687221115B0D00F486BA /* Model */,
+				EC23687321115B0D00F486BA /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EC23687121115B0D00F486BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC23687221115B0D00F486BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC23687321115B0D00F486BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC23687421115B0D00F486BA /* BBS */ = {
+			isa = PBXGroup;
+			children = (
+				EC23687521115B0D00F486BA /* Controller */,
+				EC23687621115B0D00F486BA /* Model */,
+				EC23687721115B0D00F486BA /* View */,
+			);
+			path = BBS;
+			sourceTree = "<group>";
+		};
+		EC23687521115B0D00F486BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC23687621115B0D00F486BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC23687721115B0D00F486BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDB378E19412B9CED5E74D8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC7CB3C380570173C24CFE23 /* Pods-deyi.debug.xcconfig */,
+				98302274D955948A0D814F09 /* Pods-deyi.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC23685A2111572700F486BA /* Build configuration list for PBXNativeTarget "deyi" */;
 			buildPhases = (
+				10577E34ECF85E3FA5CFB17B /* [CP] Check Pods Manifest.lock */,
 				EC2368402111572600F486BA /* Sources */,
 				EC2368412111572600F486BA /* Frameworks */,
 				EC2368422111572600F486BA /* Resources */,
+				62BC6B8144667509D8DD3B2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,18 +364,57 @@
 			files = (
 				EC2368542111572700F486BA /* LaunchScreen.storyboard in Resources */,
 				EC2368512111572700F486BA /* Assets.xcassets in Resources */,
-				EC23684F2111572600F486BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10577E34ECF85E3FA5CFB17B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-deyi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62BC6B8144667509D8DD3B2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-deyi/Pods-deyi-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/UMCShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deyi/Pods-deyi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC2368402111572600F486BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC23684C2111572600F486BA /* ViewController.m in Sources */,
 				EC2368572111572700F486BA /* main.m in Sources */,
 				EC2368492111572600F486BA /* AppDelegate.m in Sources */,
 			);
@@ -150,14 +423,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC23684D2111572600F486BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC23684E2111572600F486BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC2368522111572700F486BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -281,6 +546,7 @@
 		};
 		EC23685B2111572700F486BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC7CB3C380570173C24CFE23 /* Pods-deyi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +564,7 @@
 		};
 		EC23685C2111572700F486BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98302274D955948A0D814F09 /* Pods-deyi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
