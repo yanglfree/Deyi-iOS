@@ -16,6 +16,13 @@
 		EC23687F2111992C00F486BA /* YLAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23687E2111992C00F486BA /* YLAPI.m */; };
 		EC23688221119B1200F486BA /* YLGlobalUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23688121119B1200F486BA /* YLGlobalUserInfo.m */; };
 		EC23688521119BEC00F486BA /* YLUserDefaultConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23688421119BEC00F486BA /* YLUserDefaultConst.m */; };
+		EC23688C2112FE3D00F486BA /* YLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23688B2112FE3D00F486BA /* YLHomeViewController.m */; };
+		EC23688F2112FE5100F486BA /* YLBBSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23688E2112FE5100F486BA /* YLBBSViewController.m */; };
+		EC2368922112FE6F00F486BA /* YLMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2368912112FE6F00F486BA /* YLMyViewController.m */; };
+		EC236899211313F100F486BA /* YLBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC236898211313F100F486BA /* YLBaseTabBarController.m */; };
+		EC23689C211314CE00F486BA /* YLStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23689B211314CE00F486BA /* YLStoreViewController.m */; };
+		EC23689F211314E200F486BA /* YLTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23689E211314E200F486BA /* YLTimelineViewController.m */; };
+		EC2368A2211315DF00F486BA /* YLBaseNavgationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2368A1211315DF00F486BA /* YLBaseNavgationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,21 @@
 		EC23688121119B1200F486BA /* YLGlobalUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLGlobalUserInfo.m; sourceTree = "<group>"; };
 		EC23688321119BEC00F486BA /* YLUserDefaultConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLUserDefaultConst.h; sourceTree = "<group>"; };
 		EC23688421119BEC00F486BA /* YLUserDefaultConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLUserDefaultConst.m; sourceTree = "<group>"; };
+		EC23688A2112FE3D00F486BA /* YLHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeViewController.h; sourceTree = "<group>"; };
+		EC23688B2112FE3D00F486BA /* YLHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeViewController.m; sourceTree = "<group>"; };
+		EC23688D2112FE5100F486BA /* YLBBSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBBSViewController.h; sourceTree = "<group>"; };
+		EC23688E2112FE5100F486BA /* YLBBSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBBSViewController.m; sourceTree = "<group>"; };
+		EC2368902112FE6F00F486BA /* YLMyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMyViewController.h; sourceTree = "<group>"; };
+		EC2368912112FE6F00F486BA /* YLMyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMyViewController.m; sourceTree = "<group>"; };
+		EC236897211313F100F486BA /* YLBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBaseTabBarController.h; sourceTree = "<group>"; };
+		EC236898211313F100F486BA /* YLBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBaseTabBarController.m; sourceTree = "<group>"; };
+		EC23689A211314CE00F486BA /* YLStoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLStoreViewController.h; sourceTree = "<group>"; };
+		EC23689B211314CE00F486BA /* YLStoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLStoreViewController.m; sourceTree = "<group>"; };
+		EC23689D211314E200F486BA /* YLTimelineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLTimelineViewController.h; sourceTree = "<group>"; };
+		EC23689E211314E200F486BA /* YLTimelineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTimelineViewController.m; sourceTree = "<group>"; };
+		EC2368A0211315DF00F486BA /* YLBaseNavgationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBaseNavgationViewController.h; sourceTree = "<group>"; };
+		EC2368A1211315DF00F486BA /* YLBaseNavgationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBaseNavgationViewController.m; sourceTree = "<group>"; };
+		EC2368A3211316FF00F486BA /* Maroco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maroco.h; sourceTree = "<group>"; };
 		EC7CB3C380570173C24CFE23 /* Pods-deyi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deyi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deyi/Pods-deyi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +103,7 @@
 		EC2368462111572600F486BA /* deyi */ = {
 			isa = PBXGroup;
 			children = (
+				EC236896211313C400F486BA /* Base */,
 				EC23687B21115D6C00F486BA /* Const */,
 				EC23687421115B0D00F486BA /* BBS */,
 				EC23686121115B0C00F486BA /* Categary */,
@@ -159,6 +182,8 @@
 		EC23686321115B0C00F486BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EC23689A211314CE00F486BA /* YLStoreViewController.h */,
+				EC23689B211314CE00F486BA /* YLStoreViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +215,8 @@
 		EC23686721115B0D00F486BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EC2368902112FE6F00F486BA /* YLMyViewController.h */,
+				EC2368912112FE6F00F486BA /* YLMyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -221,6 +248,8 @@
 		EC23686B21115B0D00F486BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EC23689D211314E200F486BA /* YLTimelineViewController.h */,
+				EC23689E211314E200F486BA /* YLTimelineViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -242,6 +271,7 @@
 		EC23686E21115B0D00F486BA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EC2368A3211316FF00F486BA /* Maroco.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -266,6 +296,8 @@
 		EC23687121115B0D00F486BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EC23688A2112FE3D00F486BA /* YLHomeViewController.h */,
+				EC23688B2112FE3D00F486BA /* YLHomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +329,8 @@
 		EC23687521115B0D00F486BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EC23688D2112FE5100F486BA /* YLBBSViewController.h */,
+				EC23688E2112FE5100F486BA /* YLBBSViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -322,6 +356,17 @@
 				EC23688421119BEC00F486BA /* YLUserDefaultConst.m */,
 			);
 			path = Const;
+			sourceTree = "<group>";
+		};
+		EC236896211313C400F486BA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EC236897211313F100F486BA /* YLBaseTabBarController.h */,
+				EC236898211313F100F486BA /* YLBaseTabBarController.m */,
+				EC2368A0211315DF00F486BA /* YLBaseNavgationViewController.h */,
+				EC2368A1211315DF00F486BA /* YLBaseNavgationViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		EDB378E19412B9CED5E74D8F /* Pods */ = {
@@ -446,9 +491,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2368922112FE6F00F486BA /* YLMyViewController.m in Sources */,
+				EC23689C211314CE00F486BA /* YLStoreViewController.m in Sources */,
 				EC23688221119B1200F486BA /* YLGlobalUserInfo.m in Sources */,
+				EC23688C2112FE3D00F486BA /* YLHomeViewController.m in Sources */,
+				EC2368A2211315DF00F486BA /* YLBaseNavgationViewController.m in Sources */,
 				EC23688521119BEC00F486BA /* YLUserDefaultConst.m in Sources */,
+				EC23688F2112FE5100F486BA /* YLBBSViewController.m in Sources */,
+				EC236899211313F100F486BA /* YLBaseTabBarController.m in Sources */,
 				EC23687A21115D4600F486BA /* YLNetwork.m in Sources */,
+				EC23689F211314E200F486BA /* YLTimelineViewController.m in Sources */,
 				EC23687F2111992C00F486BA /* YLAPI.m in Sources */,
 				EC2368572111572700F486BA /* main.m in Sources */,
 				EC2368492111572600F486BA /* AppDelegate.m in Sources */,

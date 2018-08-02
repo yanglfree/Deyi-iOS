@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <objc/runtime.h>
+#import "YLHomeViewController.h"
+#import "YLBBSViewController.h"
+#import "YLMyViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +21,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UITabBarController *tabbarController = [[UITabBarController alloc] init];
+    YLHomeViewController *homeVc = [[YLHomeViewController alloc] init];
+    homeVc.tabBarItem.title = @"首页";
+    
+    YLBBSViewController *BBSVc = [[YLBBSViewController alloc] init];
+    BBSVc.tabBarItem.title = @"社区";
+    
+    YLMyViewController *myVc = [[YLMyViewController alloc] init];
+    myVc.tabBarItem.title = @"我的";
+    
+    tabbarController.viewControllers = @[homeVc,BBSVc,myVc];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = tabbarController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

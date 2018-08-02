@@ -44,6 +44,12 @@ static AFHTTPSessionManager *manager = nil;
     
 }
 
+
+- (NSURLSessionDataTask *)GetWithUrl:(NSString *)url Params:(id)params successHander:(void (^)(NSDictionary *))success failHander:(void (^)(NSError *, NSInteger, id, NSString *))fail
+{
+    return nil;
+}
+
 - (void)parseResponseData:(NSURLResponse *)response id:(id)responseObject error:(NSError *)error url:(NSString *)url successHander:(void (^)(NSDictionary *))success failHander:(void (^)(NSError *er , NSInteger httpStatus, id response, NSString *msg))fail alert:(BOOL)alert
 {
     NSLog(@"url: %@ responseObject %@",url, responseObject);
