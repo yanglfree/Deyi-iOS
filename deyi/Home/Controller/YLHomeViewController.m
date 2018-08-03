@@ -7,32 +7,84 @@
 //
 
 #import "YLHomeViewController.h"
+#import "WSegmentView.h"
+#import "SDCycleScrollView.h"
 
 @interface YLHomeViewController ()
+{
+    WSegmentView *segmentView;
+}
+
+@property(nonatomic, strong) UIScrollView *scrollView;
+@property(nonatomic, strong) UIView *searchView;
+@property(nonatomic, strong) SDCycleScrollView *sdCycleScrollView;
+@property(nonatomic, strong) UICollectionView *collectionView;
+@property(nonatomic, strong) UITableView *tableView;
 
 @end
 
 @implementation YLHomeViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        UINavigationItem *navItem = self.navigationItem;
+        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_user"] style:UIBarButtonItemStylePlain target:self action:@selector(gotoMy)];
+        navItem.rightBarButtonItem = rightItem;
+        UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_weather_sun"] style:UIBarButtonItemStylePlain target:self action:@selector(weather)];
+        navItem.leftBarButtonItem = leftItem;
+        segmentView = [[WSegmentView alloc] initWithFrame:CGRectMake(0, 0, 100, 30) titles:@[@"推荐",@"动态"] initSelected:YES];
+        navItem.titleView = segmentView;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.title = @"首页";
+    [self initSubview];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initSubview
+{
+    
+    [self.view addSubview:self.scrollView];
+    [self.scrollView addSubview:self.searchView];
+    [self.scrollView addSubview:self.sdCycleScrollView];
+    [self.scrollView addSubview:self.collectionView];
+    [self.scrollView addSubview:self.tableView];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UIScrollView *)scrollView
+{
+    if (!_scrollView) {
+        _scrollView = [[UIScrollView alloc] init];
+        _scrollView.contentSize = CGSizeMake(ScreenWidth, 1000);
+    }
+    return _scrollView;
 }
-*/
+
+- (UIView *)searchView
+{
+    if (!_searchView) {
+        _searchView = [[UIView alloc] init];
+    }
+    return _searchView;
+}
+
+
+
+- (void)gotoMy
+{
+    
+}
+
+- (void)weather
+{
+    
+}
+
+
 
 @end
