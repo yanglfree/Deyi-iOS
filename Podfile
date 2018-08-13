@@ -29,11 +29,5 @@ target 'deyi' do
     
     #pod 'SDCycleScrollView'
     
-    pod 'DZNEmptyDataSet', '~> 1.8.1'
-    
-    #umeng
-    pod 'UMCCommon'
-    pod 'UMCShare/UI'
-    pod 'UMCShare/Social/WeChat'
 
 end
