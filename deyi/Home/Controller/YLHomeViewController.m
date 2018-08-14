@@ -10,16 +10,13 @@
 #import "WSegmentView.h"
 #import "SDCycleScrollView.h"
 
-@interface YLHomeViewController ()
+@interface YLHomeViewController ()<UIScrollViewDelegate>
 {
-    WSegmentView *segmentView;
+    
 }
 
 @property(nonatomic, strong) UIScrollView *scrollView;
-@property(nonatomic, strong) UIView *searchView;
-@property(nonatomic, strong) SDCycleScrollView *sdCycleScrollView;
-@property(nonatomic, strong) UICollectionView *collectionView;
-@property(nonatomic, strong) UITableView *tableView;
+@property(nonatomic, strong) WSegmentView *segmentView;
 
 @end
 
@@ -34,8 +31,7 @@
         navItem.rightBarButtonItem = rightItem;
         UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_weather_sun"] style:UIBarButtonItemStylePlain target:self action:@selector(weather)];
         navItem.leftBarButtonItem = leftItem;
-        segmentView = [[WSegmentView alloc] initWithFrame:CGRectMake(0, 0, 100, 30) titles:@[@"推荐",@"动态"] initSelected:YES];
-        navItem.titleView = segmentView;
+        navItem.titleView = self.segmentView;
     }
     return self;
 }
@@ -49,10 +45,24 @@
 {
     
     [self.view addSubview:self.scrollView];
-    [self.scrollView addSubview:self.searchView];
-    [self.scrollView addSubview:self.sdCycleScrollView];
-    [self.scrollView addSubview:self.collectionView];
-    [self.scrollView addSubview:self.tableView];
+    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.mas_equalTo(self.view);
+        make.bottom.mas_equalTo(self.view.mas_bottom).offset(-49);
+    }];
+}
+
+- (WSegmentView *)segmentView
+{
+    if (!_segmentView) {
+        _segmentView = [[WSegmentView alloc] initWithFrame:CGRectMake(ScreenWidth / 2 - 75, 0, 150, 40) titles:@[@"推荐",@"动态"] initSelected:YES];
+        _segmentView.normalBgColor = [UIColor whiteColor];
+        _segmentView.selectedBgColor = [UIColor whiteColor];
+        _segmentView.selectedTitleColor = [UIColor blackColor];
+        _segmentView.normalTitleColor = UI_TEXT_DARK_GRAY;
+        _segmentView.titleFont = [UIFont fontWithName:@"" size:14];
+        _segmentView.showLine = YES;
+    }
+    return _segmentView;
 }
 
 
@@ -60,20 +70,21 @@
 {
     if (!_scrollView) {
         _scrollView = [[UIScrollView alloc] init];
-        _scrollView.contentSize = CGSizeMake(ScreenWidth, 1000);
+        _scrollView.backgroundColor = [UIColor yellowColor];
+        _scrollView.contentSize = CGSizeMake(ScreenWidth * 2, ScreenHeight - 64 - 49);
+        _scrollView.pagingEnabled = YES;
+        _scrollView.scrollEnabled = YES;
+        _scrollView.delegate = self;
+        _scrollView.showsHorizontalScrollIndicator = NO;
+        _scrollView.showsVerticalScrollIndicator = NO;
     }
     return _scrollView;
 }
 
-- (UIView *)searchView
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if (!_searchView) {
-        _searchView = [[UIView alloc] init];
-    }
-    return _searchView;
+    
 }
-
-
 
 - (void)gotoMy
 {

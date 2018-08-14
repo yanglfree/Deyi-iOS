@@ -57,7 +57,7 @@
         self.tabBar.backgroundColor = UI_BG_DARK_GRAY;
         self.tabBar.shadowImage = [[UIImage alloc] init];
         self.tabBar.backgroundImage = [[UIImage alloc] init];
-//        self.tabBar.tintColor = UI_MAIN_NAV_COLOR;
+        self.tabBar.tintColor = UI_MAIN_NAV_COLOR;
         self.delegate = self;
     }
     return self;

@@ -31,13 +31,6 @@
 		EC999FA9211452E20035444C /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F7D211452E10035444C /* TAPageControl.m */; };
 		EC999FAA211452E20035444C /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F7E211452E10035444C /* TAAnimatedDotView.m */; };
 		EC999FAB211452E20035444C /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F7F211452E10035444C /* TAAbstractDotView.m */; };
-		EC999FAC211452E20035444C /* SGQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EC999F85211452E10035444C /* SGQRCode.bundle */; };
-		EC999FAD211452E20035444C /* UIImage+SGImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F87211452E10035444C /* UIImage+SGImageSize.m */; };
-		EC999FAE211452E20035444C /* SGQRCodeHelperTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F89211452E10035444C /* SGQRCodeHelperTool.m */; };
-		EC999FAF211452E20035444C /* SGQRCodeScanningView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F8A211452E10035444C /* SGQRCodeScanningView.m */; };
-		EC999FB0211452E20035444C /* SGQRCodeScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F8B211452E10035444C /* SGQRCodeScanManager.m */; };
-		EC999FB1211452E20035444C /* SGQRCodeGenerateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F8C211452E10035444C /* SGQRCodeGenerateManager.m */; };
-		EC999FB2211452E20035444C /* SGQRCodeAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F91211452E10035444C /* SGQRCodeAlbumManager.m */; };
 		EC999FB3211452E20035444C /* UIView+ZJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F95211452E20035444C /* UIView+ZJFrame.m */; };
 		EC999FB4211452E20035444C /* ZJTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F9A211452E20035444C /* ZJTitleView.m */; };
 		EC999FB5211452E20035444C /* UIViewController+ZJScrollPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F9B211452E20035444C /* UIViewController+ZJScrollPageController.m */; };
@@ -99,20 +92,6 @@
 		EC999F80211452E10035444C /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
 		EC999F81211452E10035444C /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
 		EC999F82211452E10035444C /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
-		EC999F84211452E10035444C /* SGQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCode.h; sourceTree = "<group>"; };
-		EC999F85211452E10035444C /* SGQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SGQRCode.bundle; sourceTree = "<group>"; };
-		EC999F87211452E10035444C /* UIImage+SGImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGImageSize.m"; sourceTree = "<group>"; };
-		EC999F88211452E10035444C /* UIImage+SGImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SGImageSize.h"; sourceTree = "<group>"; };
-		EC999F89211452E10035444C /* SGQRCodeHelperTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeHelperTool.m; sourceTree = "<group>"; };
-		EC999F8A211452E10035444C /* SGQRCodeScanningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanningView.m; sourceTree = "<group>"; };
-		EC999F8B211452E10035444C /* SGQRCodeScanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanManager.m; sourceTree = "<group>"; };
-		EC999F8C211452E10035444C /* SGQRCodeGenerateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeGenerateManager.m; sourceTree = "<group>"; };
-		EC999F8D211452E10035444C /* SGQRCodeAlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeAlbumManager.h; sourceTree = "<group>"; };
-		EC999F8E211452E10035444C /* SGQRCodeHelperTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeHelperTool.h; sourceTree = "<group>"; };
-		EC999F8F211452E10035444C /* SGQRCodeScanningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanningView.h; sourceTree = "<group>"; };
-		EC999F90211452E10035444C /* SGQRCodeScanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanManager.h; sourceTree = "<group>"; };
-		EC999F91211452E10035444C /* SGQRCodeAlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeAlbumManager.m; sourceTree = "<group>"; };
-		EC999F92211452E10035444C /* SGQRCodeGenerateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeGenerateManager.h; sourceTree = "<group>"; };
 		EC999F94211452E20035444C /* ZJContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentView.h; sourceTree = "<group>"; };
 		EC999F95211452E20035444C /* UIView+ZJFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJFrame.m"; sourceTree = "<group>"; };
 		EC999F96211452E20035444C /* ZJCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCollectionView.h; sourceTree = "<group>"; };
@@ -446,7 +425,6 @@
 			isa = PBXGroup;
 			children = (
 				EC999F73211452E10035444C /* SDCycleScrollView */,
-				EC999F83211452E10035444C /* SGQRCode */,
 				EC999F93211452E20035444C /* ZJScrollPageView */,
 			);
 			path = Verdor;
@@ -479,35 +457,6 @@
 				EC999F82211452E10035444C /* TAPageControl.h */,
 			);
 			path = PageControl;
-			sourceTree = "<group>";
-		};
-		EC999F83211452E10035444C /* SGQRCode */ = {
-			isa = PBXGroup;
-			children = (
-				EC999F84211452E10035444C /* SGQRCode.h */,
-				EC999F85211452E10035444C /* SGQRCode.bundle */,
-				EC999F86211452E10035444C /* Category */,
-				EC999F89211452E10035444C /* SGQRCodeHelperTool.m */,
-				EC999F8A211452E10035444C /* SGQRCodeScanningView.m */,
-				EC999F8B211452E10035444C /* SGQRCodeScanManager.m */,
-				EC999F8C211452E10035444C /* SGQRCodeGenerateManager.m */,
-				EC999F8D211452E10035444C /* SGQRCodeAlbumManager.h */,
-				EC999F8E211452E10035444C /* SGQRCodeHelperTool.h */,
-				EC999F8F211452E10035444C /* SGQRCodeScanningView.h */,
-				EC999F90211452E10035444C /* SGQRCodeScanManager.h */,
-				EC999F91211452E10035444C /* SGQRCodeAlbumManager.m */,
-				EC999F92211452E10035444C /* SGQRCodeGenerateManager.h */,
-			);
-			path = SGQRCode;
-			sourceTree = "<group>";
-		};
-		EC999F86211452E10035444C /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				EC999F87211452E10035444C /* UIImage+SGImageSize.m */,
-				EC999F88211452E10035444C /* UIImage+SGImageSize.h */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		EC999F93211452E20035444C /* ZJScrollPageView */ = {
@@ -603,7 +552,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC999FAC211452E20035444C /* SGQRCode.bundle in Resources */,
 				EC2368542111572700F486BA /* LaunchScreen.storyboard in Resources */,
 				EC2368512111572700F486BA /* Assets.xcassets in Resources */,
 			);
@@ -660,14 +608,11 @@
 				EC999FA8211452E20035444C /* TADotView.m in Sources */,
 				EC23689C211314CE00F486BA /* YLStoreViewController.m in Sources */,
 				EC999FB4211452E20035444C /* ZJTitleView.m in Sources */,
-				EC999FB2211452E20035444C /* SGQRCodeAlbumManager.m in Sources */,
 				EC999FA7211452E20035444C /* SDCollectionViewCell.m in Sources */,
 				EC999FB9211452E20035444C /* ZJScrollSegmentView.m in Sources */,
 				EC23688221119B1200F486BA /* YLGlobalUserInfo.m in Sources */,
 				EC999FB3211452E20035444C /* UIView+ZJFrame.m in Sources */,
 				EC23688C2112FE3D00F486BA /* YLHomeViewController.m in Sources */,
-				EC999FB1211452E20035444C /* SGQRCodeGenerateManager.m in Sources */,
-				EC999FAE211452E20035444C /* SGQRCodeHelperTool.m in Sources */,
 				EC999FA5211452E20035444C /* SDCycleScrollView.m in Sources */,
 				EC2368A2211315DF00F486BA /* YLBaseNavgationViewController.m in Sources */,
 				EC999FAA211452E20035444C /* TAAnimatedDotView.m in Sources */,
@@ -675,7 +620,6 @@
 				EC999FAB211452E20035444C /* TAAbstractDotView.m in Sources */,
 				EC999FB5211452E20035444C /* UIViewController+ZJScrollPageController.m in Sources */,
 				EC999FA6211452E20035444C /* UIView+SDExtension.m in Sources */,
-				EC999FAF211452E20035444C /* SGQRCodeScanningView.m in Sources */,
 				EC23688F2112FE5100F486BA /* YLBBSViewController.m in Sources */,
 				EC236899211313F100F486BA /* YLBaseTabBarController.m in Sources */,
 				EC23687A21115D4600F486BA /* YLNetwork.m in Sources */,
@@ -685,8 +629,6 @@
 				EC999FB8211452E20035444C /* ZJSegmentStyle.m in Sources */,
 				EC999FBA211452E20035444C /* ZJScrollPageView.m in Sources */,
 				EC23687F2111992C00F486BA /* YLAPI.m in Sources */,
-				EC999FB0211452E20035444C /* SGQRCodeScanManager.m in Sources */,
-				EC999FAD211452E20035444C /* UIImage+SGImageSize.m in Sources */,
 				EC2368572111572700F486BA /* main.m in Sources */,
 				EC999F712114506A0035444C /* WSegmentView.m in Sources */,
 				EC2368492111572600F486BA /* AppDelegate.m in Sources */,
