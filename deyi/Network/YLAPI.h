@@ -11,5 +11,6 @@
 @interface YLAPI : NSObject
 
 extern NSString *const API_ServiceUrlDomain;
+extern NSString *const API_HOME_RECOMMEND;
 
 @end

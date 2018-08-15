@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		353696AA21245AE700C38D1E /* YLMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353696A921245AE700C38D1E /* YLMainDataModel.m */; };
+		354D820921247ED2007600DC /* YLBannerNavTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D820821247ED2007600DC /* YLBannerNavTableViewCell.m */; };
+		354D820D21248884007600DC /* YLNavCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D820B21248884007600DC /* YLNavCollectionViewCell.m */; };
+		354D820E21248884007600DC /* YLNavCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D820C21248884007600DC /* YLNavCollectionViewCell.xib */; };
 		DA6A324D4BA57BC16F30D1D5 /* libPods-deyi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A38297D4F9C363FD3498BA1 /* libPods-deyi.a */; };
 		EC2368492111572600F486BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2368482111572600F486BA /* AppDelegate.m */; };
 		EC2368512111572700F486BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2368502111572700F486BA /* Assets.xcassets */; };
@@ -48,6 +51,11 @@
 		2A38297D4F9C363FD3498BA1 /* libPods-deyi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-deyi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		353696A821245AE700C38D1E /* YLMainDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMainDataModel.h; sourceTree = "<group>"; };
 		353696A921245AE700C38D1E /* YLMainDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMainDataModel.m; sourceTree = "<group>"; };
+		354D820721247ED2007600DC /* YLBannerNavTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBannerNavTableViewCell.h; sourceTree = "<group>"; };
+		354D820821247ED2007600DC /* YLBannerNavTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBannerNavTableViewCell.m; sourceTree = "<group>"; };
+		354D820A21248884007600DC /* YLNavCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNavCollectionViewCell.h; sourceTree = "<group>"; };
+		354D820B21248884007600DC /* YLNavCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNavCollectionViewCell.m; sourceTree = "<group>"; };
+		354D820C21248884007600DC /* YLNavCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLNavCollectionViewCell.xib; sourceTree = "<group>"; };
 		98302274D955948A0D814F09 /* Pods-deyi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deyi.release.xcconfig"; path = "Pods/Target Support Files/Pods-deyi/Pods-deyi.release.xcconfig"; sourceTree = "<group>"; };
 		EC2368442111572600F486BA /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2368472111572600F486BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +155,18 @@
 				353696A921245AE700C38D1E /* YLMainDataModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		354D820621247E7F007600DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				354D820721247ED2007600DC /* YLBannerNavTableViewCell.h */,
+				354D820821247ED2007600DC /* YLBannerNavTableViewCell.m */,
+				354D820A21248884007600DC /* YLNavCollectionViewCell.h */,
+				354D820B21248884007600DC /* YLNavCollectionViewCell.m */,
+				354D820C21248884007600DC /* YLNavCollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EC23683B2111572600F486BA = {
@@ -358,6 +378,7 @@
 			children = (
 				353696A721245A5500C38D1E /* Model */,
 				EC23687121115B0D00F486BA /* Controller */,
+				354D820621247E7F007600DC /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -560,6 +581,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC2368542111572700F486BA /* LaunchScreen.storyboard in Resources */,
+				354D820E21248884007600DC /* YLNavCollectionViewCell.xib in Resources */,
 				EC2368512111572700F486BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,11 +643,13 @@
 				EC23688221119B1200F486BA /* YLGlobalUserInfo.m in Sources */,
 				EC999FB3211452E20035444C /* UIView+ZJFrame.m in Sources */,
 				EC23688C2112FE3D00F486BA /* YLHomeViewController.m in Sources */,
+				354D820D21248884007600DC /* YLNavCollectionViewCell.m in Sources */,
 				EC999FA5211452E20035444C /* SDCycleScrollView.m in Sources */,
 				EC2368A2211315DF00F486BA /* YLBaseNavgationViewController.m in Sources */,
 				EC999FAA211452E20035444C /* TAAnimatedDotView.m in Sources */,
 				EC23688521119BEC00F486BA /* YLUserDefaultConst.m in Sources */,
 				EC9CC916212427C20059C9B8 /* YLHomeTimeLineViewController.m in Sources */,
+				354D820921247ED2007600DC /* YLBannerNavTableViewCell.m in Sources */,
 				EC999FAB211452E20035444C /* TAAbstractDotView.m in Sources */,
 				EC999FB5211452E20035444C /* UIViewController+ZJScrollPageController.m in Sources */,
 				EC999FA6211452E20035444C /* UIView+SDExtension.m in Sources */,

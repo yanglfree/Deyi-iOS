@@ -10,6 +10,7 @@
 
 @implementation YLAPI
 
-NSString *const API_ServiceUrlDomain = @"http://167.99.230.31/";
+NSString *const API_ServiceUrlDomain = @"http://newapi.deyi.com/";
+NSString *const API_HOME_RECOMMEND = @"app/index/home";
 
 @end

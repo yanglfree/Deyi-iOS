@@ -94,7 +94,7 @@
 @property(nonatomic, copy) NSString *pubtime;
 @property(nonatomic, copy) NSString *taskid;
 @property(nonatomic, copy) NSString *thread_time;
-@property(nonatomic, assign) NSInteger ad;
+@property(nonatomic, assign) BOOL ad;
 @property(nonatomic, copy) NSString *fixed_pos;
 @property(nonatomic, copy) NSString *referrer;
 @property(nonatomic, copy) NSString *auditor;
@@ -115,7 +115,7 @@
 
 @interface RecommendModel : NSObject
 
-@property(nonatomic, copy) NSArray *listArr;
+@property(nonatomic, copy) NSArray<RecommendList *> *listArr;
 @property(nonatomic, copy) NSString *nextpage;
 
 @end

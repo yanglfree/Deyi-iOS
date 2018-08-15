@@ -20,4 +20,18 @@
 
 #define TAB_BAR_HEIGHT 49
 
+//弱引用
+//WEAKSELF STRONGSELF
+#define WEAKSELF __weak typeof(self) weakSelf = self;
+#define STRONGSELF __strong typeof(weakSelf) strongSelf = weakSelf;
+#define STRONGSELF_OR_RET(_ret_) \
+if (!weakSelf) return _ret_; \
+__strong typeof(weakSelf) strongSelf = weakSelf;
+#define WEAKSELF_OR_RET(_ret_) \
+if (!weakSelf) return _ret_;
+
+#define YLAppVersion  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+
+
 #endif /* Maroco_h */

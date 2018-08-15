@@ -39,8 +39,20 @@
 
 - (NSDictionary *)getLocalHeaderInfo
 {
-    NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys:[NSString stringWithFormat:@"%@", @(self.uid)], @"X-AUTH-USER", self.token, @"X-AUTH-TOKEN", nil];
-    return dict;
+    NSString *timeStr = [NSString stringWithFormat:@"%f",[NSDate date].timeIntervalSinceNow];
+    NSString *deviceId = [[UIDevice currentDevice] identifierForVendor].UUIDString;
+    return @{@"TYPE":@"ios",
+             @"Content-Type":@"application/json",
+                                     @"DEVICEID":deviceId,
+                                     @"USERID":@"",
+                                     @"Accept-Language":@"zh-Hans-CN;q=1, en-CN;q=0.9, ja-CN;q=0.8, ar-CN;q=0.7, pt-BR;q=0.6",
+                                     @"User-Agent":@"DeyiLife/6.3.9 (iPhone; iOS 11.4.1; Scale/2.00)",
+                                     @"AREAID":@"258",
+                                     @"Connection":@"keep-alive",
+                                     @"VERSION":YLAppVersion,
+                                     @"TIMESTAMP": timeStr,
+                                     @"Accept-Encoding":@"gzip, deflate",
+             };
 }
 
 - (NSString *)getLocalToken

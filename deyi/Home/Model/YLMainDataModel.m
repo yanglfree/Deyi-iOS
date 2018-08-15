@@ -67,7 +67,7 @@
     return @{@"listArr":@"list"};
 }
 
-+ (NSDictionary *)modelCustomContainerGenericClass
++ (NSDictionary *)modelContainerPropertyGenericClass
 {
     return @{@"listArr":[RecommendList class]};
 }

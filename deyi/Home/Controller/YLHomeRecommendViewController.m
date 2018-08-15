@@ -8,10 +8,13 @@
 
 #import "YLHomeRecommendViewController.h"
 #import "ZJScrollPageView.h"
+#import "YLMainDataModel.h"
+#import "YLBannerNavTableViewCell.h"
 
 @interface YLHomeRecommendViewController ()<ZJScrollPageViewChildVcDelegate,UITableViewDelegate,UITableViewDataSource>
 
-@property(nonatomic, copy) NSArray *recommendListArr;
+@property(nonatomic, strong) YLMainDataModel *mainDataModel;
+@property(nonatomic, strong) UITableView *tableview;
 
 @end
 
@@ -19,19 +22,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
-    
-    UITableView *tableview = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
-    [tableview mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self initView];
+    [self initData];
+}
+
+- (void)initView
+{
+    _tableview = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    _tableview.delegate = self;
+    _tableview.dataSource = self;
+    _tableview.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    [_tableview registerClass:[YLBannerNavTableViewCell class] forCellReuseIdentifier:NSStringFromClass([YLBannerNavTableViewCell class])];
+    [self.view addSubview:_tableview];
+    [_tableview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
-    tableview.delegate = self;
-    tableview.dataSource = self;
-    tableview.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    
-    [self.view addSubview:tableview];
-    
+}
+
+- (void)initData
+{
+    WEAKSELF
+    [[YLNetwork sharedNetwork] PostWithUrl:API_HOME_RECOMMEND params:@{@"city":@"武汉市"} successHander:^(NSDictionary *response) {
+        weakSelf.mainDataModel = [YLMainDataModel yy_modelWithDictionary:response[@"data"]];
+        if (weakSelf.mainDataModel == nil) {
+            return;
+        }
+        [weakSelf.tableview reloadData];
+    } failHander:^(NSError *error, NSInteger httpStatus, id response, NSString *msg) {
+        NSLog(@"error is %@",msg);
+    }];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -46,15 +65,60 @@
     }else if (section == 1){
         return 1;
     }else if (section == 2){
-        return _recommendListArr.count;
+        return self.mainDataModel.activity.listArr.count;
     }else{
         return 0;
     }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        return 340;
+    }else if(indexPath.section == 1){
+        return 200;
+    }else{
+        RecommendList *recommendListModel = self.mainDataModel.recommend.listArr[indexPath.row];
+        return recommendListModel.ad ? 200 : 100;
+    }
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return [[UIView alloc] init];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return [[UIView alloc] init];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    UITableViewCell *cell;
+    if (indexPath.section == 0) {
+        cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YLBannerNavTableViewCell class])];
+        if (!cell) {
+            cell = [[YLBannerNavTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([YLBannerNavTableViewCell class])];
+        }
+        [cell setValue:self.mainDataModel.navArr forKey:@"navArr"];
+        [cell setValue:self.mainDataModel.bannerArr forKey:@"bannerArr"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }else{
+        cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([UITableViewCell class])];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        }
+    }
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 2) {
+        //
+    }
 }
 
 
