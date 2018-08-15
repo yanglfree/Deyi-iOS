@@ -514,7 +514,6 @@
 				EC2368412111572600F486BA /* Frameworks */,
 				EC2368422111572600F486BA /* Resources */,
 				62BC6B8144667509D8DD3B2B /* [CP] Copy Pods Resources */,
-				6BCE8EBCB98E401779490221 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -605,24 +604,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deyi/Pods-deyi-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6BCE8EBCB98E401779490221 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-deyi/Pods-deyi-frameworks.sh",
-				"${PODS_ROOT}/Reveal-SDK/RevealServer-15/iOS/RevealServer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deyi/Pods-deyi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

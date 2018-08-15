@@ -66,7 +66,7 @@
         style.selectedTitleColor = [UIColor blackColor];
         style.normalTitleColor = UI_TEXT_DARK_GRAY;
         _scrollPageView = [[ZJScrollPageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth,ScreenHeight - TAB_BAR_HEIGHT) segmentStyle:style titles:_titleArr parentViewController:self delegate:self];
-        _scrollPageView.segmentView.frame = CGRectMake(ScreenWidth / 2 - 75, 0, 150, 40);
+        _scrollPageView.segmentView.frame = CGRectMake(ScreenWidth / 2 - 50, 0, 100, 40);
         _scrollPageView.backgroundColor = [UIColor yellowColor];
     }
     return _scrollPageView;

@@ -31,7 +31,7 @@ target 'deyi' do
     
     pod 'RKSwipeBetweenViewControllers'
     
-    pod 'Reveal-SDK', :configurations => ['Debug']
-    
+#    pod 'Reveal-SDK', :configurations => ['Debug']
+
 
 end
