@@ -29,5 +29,9 @@ target 'deyi' do
     
     #pod 'SDCycleScrollView'
     
+    pod 'RKSwipeBetweenViewControllers'
+    
+    pod 'Reveal-SDK', :configurations => ['Debug']
+    
 
 end

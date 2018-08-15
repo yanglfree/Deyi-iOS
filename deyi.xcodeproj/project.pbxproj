@@ -39,6 +39,8 @@
 		EC999FB8211452E20035444C /* ZJSegmentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999FA0211452E20035444C /* ZJSegmentStyle.m */; };
 		EC999FB9211452E20035444C /* ZJScrollSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999FA1211452E20035444C /* ZJScrollSegmentView.m */; };
 		EC999FBA211452E20035444C /* ZJScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999FA2211452E20035444C /* ZJScrollPageView.m */; };
+		EC9CC913212427B50059C9B8 /* YLHomeRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CC912212427B50059C9B8 /* YLHomeRecommendViewController.m */; };
+		EC9CC916212427C20059C9B8 /* YLHomeTimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CC915212427C20059C9B8 /* YLHomeTimeLineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +111,10 @@
 		EC999FA2211452E20035444C /* ZJScrollPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollPageView.m; sourceTree = "<group>"; };
 		EC999FA3211452E20035444C /* UIViewController+ZJScrollPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZJScrollPageController.h"; sourceTree = "<group>"; };
 		EC999FA4211452E20035444C /* ZJTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTitleView.h; sourceTree = "<group>"; };
+		EC9CC911212427B50059C9B8 /* YLHomeRecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeRecommendViewController.h; sourceTree = "<group>"; };
+		EC9CC912212427B50059C9B8 /* YLHomeRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeRecommendViewController.m; sourceTree = "<group>"; };
+		EC9CC914212427C20059C9B8 /* YLHomeTimeLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeTimeLineViewController.h; sourceTree = "<group>"; };
+		EC9CC915212427C20059C9B8 /* YLHomeTimeLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeTimeLineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +356,10 @@
 			children = (
 				EC23688A2112FE3D00F486BA /* YLHomeViewController.h */,
 				EC23688B2112FE3D00F486BA /* YLHomeViewController.m */,
+				EC9CC911212427B50059C9B8 /* YLHomeRecommendViewController.h */,
+				EC9CC912212427B50059C9B8 /* YLHomeRecommendViewController.m */,
+				EC9CC914212427C20059C9B8 /* YLHomeTimeLineViewController.h */,
+				EC9CC915212427C20059C9B8 /* YLHomeTimeLineViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -504,6 +514,7 @@
 				EC2368412111572600F486BA /* Frameworks */,
 				EC2368422111572600F486BA /* Resources */,
 				62BC6B8144667509D8DD3B2B /* [CP] Copy Pods Resources */,
+				6BCE8EBCB98E401779490221 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -596,6 +607,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deyi/Pods-deyi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6BCE8EBCB98E401779490221 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-deyi/Pods-deyi-frameworks.sh",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-15/iOS/RevealServer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deyi/Pods-deyi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -617,6 +646,7 @@
 				EC2368A2211315DF00F486BA /* YLBaseNavgationViewController.m in Sources */,
 				EC999FAA211452E20035444C /* TAAnimatedDotView.m in Sources */,
 				EC23688521119BEC00F486BA /* YLUserDefaultConst.m in Sources */,
+				EC9CC916212427C20059C9B8 /* YLHomeTimeLineViewController.m in Sources */,
 				EC999FAB211452E20035444C /* TAAbstractDotView.m in Sources */,
 				EC999FB5211452E20035444C /* UIViewController+ZJScrollPageController.m in Sources */,
 				EC999FA6211452E20035444C /* UIView+SDExtension.m in Sources */,
@@ -632,6 +662,7 @@
 				EC2368572111572700F486BA /* main.m in Sources */,
 				EC999F712114506A0035444C /* WSegmentView.m in Sources */,
 				EC2368492111572600F486BA /* AppDelegate.m in Sources */,
+				EC9CC913212427B50059C9B8 /* YLHomeRecommendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

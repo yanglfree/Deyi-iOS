@@ -9,14 +9,18 @@
 #import "YLHomeViewController.h"
 #import "WSegmentView.h"
 #import "SDCycleScrollView.h"
+#import "ZJScrollPageView.h"
+#import "YLHomeRecommendViewController.h"
+#import "YLHomeTimeLineViewController.h"
 
-@interface YLHomeViewController ()<UIScrollViewDelegate>
+@interface YLHomeViewController ()<UIScrollViewDelegate,ZJScrollPageViewDelegate>
 {
     
 }
 
 @property(nonatomic, strong) UIScrollView *scrollView;
-@property(nonatomic, strong) WSegmentView *segmentView;
+@property(nonatomic, strong) ZJScrollPageView *scrollPageView;
+@property(nonatomic, copy) NSArray *titleArr;
 
 @end
 
@@ -31,7 +35,8 @@
         navItem.rightBarButtonItem = rightItem;
         UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_weather_sun"] style:UIBarButtonItemStylePlain target:self action:@selector(weather)];
         navItem.leftBarButtonItem = leftItem;
-        navItem.titleView = self.segmentView;
+        _titleArr = @[@"推荐",@"动态"];
+        navItem.titleView = self.scrollPageView.segmentView;
     }
     return self;
 }
@@ -43,26 +48,28 @@
 
 - (void)initSubview
 {
-    
-    [self.view addSubview:self.scrollView];
-    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.mas_equalTo(self.view);
-        make.bottom.mas_equalTo(self.view.mas_bottom).offset(-49);
+    [self.view addSubview:self.scrollPageView];
+    CGFloat navHeight = self.navigationController.navigationBar.height;
+    CGFloat tabHeight = self.tabBarController.tabBar.height;
+    [self.scrollPageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_equalTo(self.view);
+        make.top.mas_equalTo(self.view).offset(-navHeight);
+        make.bottom.mas_equalTo(self.view).offset(-tabHeight);
     }];
 }
 
-- (WSegmentView *)segmentView
+- (ZJScrollPageView *)scrollPageView
 {
-    if (!_segmentView) {
-        _segmentView = [[WSegmentView alloc] initWithFrame:CGRectMake(ScreenWidth / 2 - 75, 0, 150, 40) titles:@[@"推荐",@"动态"] initSelected:YES];
-        _segmentView.normalBgColor = [UIColor whiteColor];
-        _segmentView.selectedBgColor = [UIColor whiteColor];
-        _segmentView.selectedTitleColor = [UIColor blackColor];
-        _segmentView.normalTitleColor = UI_TEXT_DARK_GRAY;
-        _segmentView.titleFont = [UIFont fontWithName:@"" size:14];
-        _segmentView.showLine = YES;
+    if (!_scrollPageView) {
+        ZJSegmentStyle *style = [[ZJSegmentStyle alloc] init];
+        style.showLine = YES;
+        style.selectedTitleColor = [UIColor blackColor];
+        style.normalTitleColor = UI_TEXT_DARK_GRAY;
+        _scrollPageView = [[ZJScrollPageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth,ScreenHeight - TAB_BAR_HEIGHT) segmentStyle:style titles:_titleArr parentViewController:self delegate:self];
+        _scrollPageView.segmentView.frame = CGRectMake(ScreenWidth / 2 - 75, 0, 150, 40);
+        _scrollPageView.backgroundColor = [UIColor yellowColor];
     }
-    return _segmentView;
+    return _scrollPageView;
 }
 
 
@@ -81,9 +88,29 @@
     return _scrollView;
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+- (BOOL)shouldAutomaticallyForwardAppearanceMethods
 {
-    
+    return NO;
+}
+
+- (NSInteger)numberOfChildViewControllers
+{
+    return _titleArr.count;
+}
+
+- (UIViewController<ZJScrollPageViewChildVcDelegate> *)childViewController:(UIViewController<ZJScrollPageViewChildVcDelegate> *)reuseViewController forIndex:(NSInteger)index
+{
+    UIViewController<ZJScrollPageViewChildVcDelegate> *childVc = reuseViewController;
+    if (!childVc) {
+        if (index == 0) {
+            //推荐
+            childVc = (UIViewController<ZJScrollPageViewChildVcDelegate> *)[[YLHomeRecommendViewController alloc] init];
+        }else{
+            //动态
+            childVc = (UIViewController<ZJScrollPageViewChildVcDelegate> *)[[YLHomeTimeLineViewController alloc] init];
+        }
+    }
+    return childVc;
 }
 
 - (void)gotoMy
@@ -95,7 +122,5 @@
 {
     
 }
-
-
 
 @end
