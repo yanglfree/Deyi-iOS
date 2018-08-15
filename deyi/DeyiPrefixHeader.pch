@@ -17,6 +17,7 @@
 #import <YYCategories/YYCategories.h>
 #import "Maroco.h"
 #import <Masonry/Masonry.h>
+#import <YYModel/YYModel.h>
 
 
 #endif /* DeyiPrefixHeader_pch */

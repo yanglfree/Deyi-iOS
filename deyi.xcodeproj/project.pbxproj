@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353696AA21245AE700C38D1E /* YLMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353696A921245AE700C38D1E /* YLMainDataModel.m */; };
 		DA6A324D4BA57BC16F30D1D5 /* libPods-deyi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A38297D4F9C363FD3498BA1 /* libPods-deyi.a */; };
 		EC2368492111572600F486BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2368482111572600F486BA /* AppDelegate.m */; };
 		EC2368512111572700F486BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2368502111572700F486BA /* Assets.xcassets */; };
@@ -45,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		2A38297D4F9C363FD3498BA1 /* libPods-deyi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-deyi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		353696A821245AE700C38D1E /* YLMainDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMainDataModel.h; sourceTree = "<group>"; };
+		353696A921245AE700C38D1E /* YLMainDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMainDataModel.m; sourceTree = "<group>"; };
 		98302274D955948A0D814F09 /* Pods-deyi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deyi.release.xcconfig"; path = "Pods/Target Support Files/Pods-deyi/Pods-deyi.release.xcconfig"; sourceTree = "<group>"; };
 		EC2368442111572600F486BA /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2368472111572600F486BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +138,15 @@
 				2A38297D4F9C363FD3498BA1 /* libPods-deyi.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		353696A721245A5500C38D1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				353696A821245AE700C38D1E /* YLMainDataModel.h */,
+				353696A921245AE700C38D1E /* YLMainDataModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EC23683B2111572600F486BA = {
@@ -344,9 +356,8 @@
 		EC23687021115B0D00F486BA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				353696A721245A5500C38D1E /* Model */,
 				EC23687121115B0D00F486BA /* Controller */,
-				EC23687221115B0D00F486BA /* Model */,
-				EC23687321115B0D00F486BA /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -362,20 +373,6 @@
 				EC9CC915212427C20059C9B8 /* YLHomeTimeLineViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		EC23687221115B0D00F486BA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		EC23687321115B0D00F486BA /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		EC23687421115B0D00F486BA /* BBS */ = {
@@ -614,6 +611,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC999FB6211452E20035444C /* ZJContentView.m in Sources */,
+				353696AA21245AE700C38D1E /* YLMainDataModel.m in Sources */,
 				EC2368922112FE6F00F486BA /* YLMyViewController.m in Sources */,
 				EC999FA8211452E20035444C /* TADotView.m in Sources */,
 				EC23689C211314CE00F486BA /* YLStoreViewController.m in Sources */,

@@ -7,16 +7,12 @@
 //
 
 #import "YLHomeViewController.h"
-#import "WSegmentView.h"
 #import "SDCycleScrollView.h"
 #import "ZJScrollPageView.h"
 #import "YLHomeRecommendViewController.h"
 #import "YLHomeTimeLineViewController.h"
 
 @interface YLHomeViewController ()<UIScrollViewDelegate,ZJScrollPageViewDelegate>
-{
-    
-}
 
 @property(nonatomic, strong) UIScrollView *scrollView;
 @property(nonatomic, strong) ZJScrollPageView *scrollPageView;
@@ -65,6 +61,7 @@
         style.showLine = YES;
         style.selectedTitleColor = [UIColor blackColor];
         style.normalTitleColor = UI_TEXT_DARK_GRAY;
+        style.titleFont = [UIFont fontWithName:@"" size:15];
         _scrollPageView = [[ZJScrollPageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth,ScreenHeight - TAB_BAR_HEIGHT) segmentStyle:style titles:_titleArr parentViewController:self delegate:self];
         _scrollPageView.segmentView.frame = CGRectMake(ScreenWidth / 2 - 50, 0, 100, 40);
         _scrollPageView.backgroundColor = [UIColor yellowColor];

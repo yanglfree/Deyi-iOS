@@ -41,7 +41,6 @@ static AFHTTPSessionManager *manager = nil;
     }];
     [dataTask resume];
     return dataTask;
-    
 }
 
 
