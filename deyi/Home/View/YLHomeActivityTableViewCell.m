@@ -52,12 +52,6 @@ static const CGFloat kItemSpacing = 3.f;
     [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([YLHomeActivityCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([YLHomeActivityCollectionViewCell class])];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-    _collectionView.backgroundColor = [UIColor yellowColor];
-}
-
-- (void)updateLayout
-{
-    
 }
 
 #pragma mark - uicollection view
@@ -80,7 +74,6 @@ static const CGFloat kItemSpacing = 3.f;
     if (!cell) {
         cell = [[YLHomeActivityCollectionViewCell alloc] init];
     }
-    cell.backgroundColor = [UIColor purpleColor];
     [cell setCellWithModel:list];
     return cell;
 }
