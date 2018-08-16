@@ -11,6 +11,9 @@
 #import "YLMainDataModel.h"
 #import "YLBannerNavTableViewCell.h"
 #import "YLHomeActivityTableViewCell.h"
+#import "YLHomeRecommendAdTableViewCell.h"
+#import "YLHomeRecommendSingleImageTableViewCell.h"
+#import "YLHomeRecommendMultiImageTableViewCell.h"
 
 @interface YLHomeRecommendViewController ()<ZJScrollPageViewChildVcDelegate,UITableViewDelegate,UITableViewDataSource>
 
@@ -35,6 +38,9 @@
     _tableview.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     [_tableview registerClass:[YLBannerNavTableViewCell class] forCellReuseIdentifier:NSStringFromClass([YLBannerNavTableViewCell class])];
     [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([YLHomeActivityTableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([YLHomeActivityTableViewCell class])];
+    [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([YLHomeRecommendAdTableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([YLHomeRecommendAdTableViewCell class])];
+    [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([YLHomeRecommendSingleImageTableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([YLHomeRecommendSingleImageTableViewCell class])];
+    [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([YLHomeRecommendMultiImageTableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([YLHomeRecommendMultiImageTableViewCell class])];
     [self.view addSubview:_tableview];
     [_tableview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
@@ -81,7 +87,7 @@
         return 220;
     }else{
         RecommendList *recommendListModel = self.mainDataModel.recommend.listArr[indexPath.row];
-        return recommendListModel.ad ? 200 : 100;
+        return recommendListModel.ad ? 200 : recommendListModel.moreimgs.count == 0 ? 180 : 220;
     }
 }
 
@@ -122,6 +128,32 @@
             cell = [[YLHomeActivityTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([YLHomeActivityTableViewCell class])];
         }
         [cell setValue:self.mainDataModel.activity forKey:@"activityModel"];
+    }else if(indexPath.section == 2){
+        
+        RecommendList *list = self.mainDataModel.recommend.listArr[indexPath.row];
+        if (list.ad) {
+            cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YLHomeRecommendAdTableViewCell class])];
+            if (!cell) {
+                cell = [[YLHomeRecommendAdTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([YLHomeRecommendAdTableViewCell class])];
+            }
+            [cell setValue:list forKey:@"recommendListModel"];
+        }else{
+            if (list.moreimgs != nil && list.moreimgs.count > 0) {
+                //多图
+                cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YLHomeRecommendMultiImageTableViewCell class])];
+                if (!cell) {
+                    cell = [[YLHomeRecommendMultiImageTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([YLHomeRecommendMultiImageTableViewCell class])];
+                }
+                [cell setValue:list forKey:@"recommendMultiListModel"];
+            }else{
+                //单图
+                cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YLHomeRecommendSingleImageTableViewCell class])];
+                if (!cell) {
+                    cell = [[YLHomeRecommendSingleImageTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([YLHomeRecommendSingleImageTableViewCell class])];
+                }
+                [cell setValue:list forKey:@"recommendSingleImageListModel"];
+            }
+        }
     }else{
         cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
         if (!cell) {

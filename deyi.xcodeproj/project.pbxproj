@@ -49,6 +49,12 @@
 		EC9CC916212427C20059C9B8 /* YLHomeTimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CC915212427C20059C9B8 /* YLHomeTimeLineViewController.m */; };
 		EC9CC91A212515E60059C9B8 /* YLHomeActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CC918212515E60059C9B8 /* YLHomeActivityTableViewCell.m */; };
 		EC9CC91B212515E60059C9B8 /* YLHomeActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9CC919212515E60059C9B8 /* YLHomeActivityTableViewCell.xib */; };
+		ECBAF140212557220083CE87 /* YLHomeRecommendAdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBAF13E212557220083CE87 /* YLHomeRecommendAdTableViewCell.m */; };
+		ECBAF141212557220083CE87 /* YLHomeRecommendAdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECBAF13F212557220083CE87 /* YLHomeRecommendAdTableViewCell.xib */; };
+		ECBAF14A21255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBAF14821255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.m */; };
+		ECBAF14B21255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECBAF14921255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.xib */; };
+		ECBAF14F21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBAF14D21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.m */; };
+		ECBAF15021255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECBAF14E21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +142,15 @@
 		EC9CC917212515E60059C9B8 /* YLHomeActivityTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeActivityTableViewCell.h; sourceTree = "<group>"; };
 		EC9CC918212515E60059C9B8 /* YLHomeActivityTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeActivityTableViewCell.m; sourceTree = "<group>"; };
 		EC9CC919212515E60059C9B8 /* YLHomeActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLHomeActivityTableViewCell.xib; sourceTree = "<group>"; };
+		ECBAF13D212557220083CE87 /* YLHomeRecommendAdTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeRecommendAdTableViewCell.h; sourceTree = "<group>"; };
+		ECBAF13E212557220083CE87 /* YLHomeRecommendAdTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeRecommendAdTableViewCell.m; sourceTree = "<group>"; };
+		ECBAF13F212557220083CE87 /* YLHomeRecommendAdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLHomeRecommendAdTableViewCell.xib; sourceTree = "<group>"; };
+		ECBAF14721255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeRecommendSingleImageTableViewCell.h; sourceTree = "<group>"; };
+		ECBAF14821255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeRecommendSingleImageTableViewCell.m; sourceTree = "<group>"; };
+		ECBAF14921255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLHomeRecommendSingleImageTableViewCell.xib; sourceTree = "<group>"; };
+		ECBAF14C21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeRecommendMultiImageTableViewCell.h; sourceTree = "<group>"; };
+		ECBAF14D21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeRecommendMultiImageTableViewCell.m; sourceTree = "<group>"; };
+		ECBAF14E21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLHomeRecommendMultiImageTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +196,15 @@
 				EC1940FE21251A7C00246111 /* YLHomeActivityCollectionViewCell.h */,
 				EC1940FF21251A7C00246111 /* YLHomeActivityCollectionViewCell.m */,
 				EC19410021251A7C00246111 /* YLHomeActivityCollectionViewCell.xib */,
+				ECBAF13D212557220083CE87 /* YLHomeRecommendAdTableViewCell.h */,
+				ECBAF13E212557220083CE87 /* YLHomeRecommendAdTableViewCell.m */,
+				ECBAF13F212557220083CE87 /* YLHomeRecommendAdTableViewCell.xib */,
+				ECBAF14721255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.h */,
+				ECBAF14821255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.m */,
+				ECBAF14921255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.xib */,
+				ECBAF14C21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.h */,
+				ECBAF14D21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.m */,
+				ECBAF14E21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -601,7 +625,10 @@
 				354D820E21248884007600DC /* YLNavCollectionViewCell.xib in Resources */,
 				EC9CC91B212515E60059C9B8 /* YLHomeActivityTableViewCell.xib in Resources */,
 				EC2368512111572700F486BA /* Assets.xcassets in Resources */,
+				ECBAF15021255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.xib in Resources */,
+				ECBAF14B21255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.xib in Resources */,
 				EC19410221251A7C00246111 /* YLHomeActivityCollectionViewCell.xib in Resources */,
+				ECBAF141212557220083CE87 /* YLHomeRecommendAdTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,11 +710,14 @@
 				EC23688C2112FE3D00F486BA /* YLHomeViewController.m in Sources */,
 				354D820D21248884007600DC /* YLNavCollectionViewCell.m in Sources */,
 				EC999FA5211452E20035444C /* SDCycleScrollView.m in Sources */,
+				ECBAF140212557220083CE87 /* YLHomeRecommendAdTableViewCell.m in Sources */,
 				EC2368A2211315DF00F486BA /* YLBaseNavgationViewController.m in Sources */,
+				ECBAF14A21255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.m in Sources */,
 				EC999FAA211452E20035444C /* TAAnimatedDotView.m in Sources */,
 				EC23688521119BEC00F486BA /* YLUserDefaultConst.m in Sources */,
 				EC9CC916212427C20059C9B8 /* YLHomeTimeLineViewController.m in Sources */,
 				354D820921247ED2007600DC /* YLBannerNavTableViewCell.m in Sources */,
+				ECBAF14F21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.m in Sources */,
 				EC19410121251A7C00246111 /* YLHomeActivityCollectionViewCell.m in Sources */,
 				EC999FAB211452E20035444C /* TAAbstractDotView.m in Sources */,
 				EC999FB5211452E20035444C /* UIViewController+ZJScrollPageController.m in Sources */,

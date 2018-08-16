@@ -68,7 +68,6 @@ static const CGFloat kItemSpacing = 3.f;
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     ActivityList *list = _activityModel.listArr[indexPath.row];
     YLHomeActivityCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([YLHomeActivityCollectionViewCell class]) forIndexPath:indexPath];
     if (!cell) {
@@ -83,7 +82,6 @@ static const CGFloat kItemSpacing = 3.f;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     _pageControl.currentPage = floorf((_collectionView.contentOffset.x + ScreenWidth * 0.5) / ScreenWidth);
-    NSLog(@"currentPage is %f", floorf((_collectionView.contentOffset.x + ScreenWidth * 0.5) / ScreenWidth));
 }
 
 @end

@@ -32,6 +32,6 @@ if (!weakSelf) return _ret_;
 
 #define YLAppVersion  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
-
+#define PLACEHOLDER_IMAGE [UIImage imageNamed:@"placeholder"]
 
 #endif /* Maroco_h */
