@@ -73,7 +73,7 @@
     }else if (section == 1){
         return 1;
     }else if (section == 2){
-        return self.mainDataModel.activity.listArr.count;
+        return self.mainDataModel.recommend.listArr.count;
     }else{
         return 0;
     }
