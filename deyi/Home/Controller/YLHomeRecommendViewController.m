@@ -10,6 +10,7 @@
 #import "ZJScrollPageView.h"
 #import "YLMainDataModel.h"
 #import "YLBannerNavTableViewCell.h"
+#import "YLHomeActivityTableViewCell.h"
 
 @interface YLHomeRecommendViewController ()<ZJScrollPageViewChildVcDelegate,UITableViewDelegate,UITableViewDataSource>
 
@@ -33,6 +34,7 @@
     _tableview.dataSource = self;
     _tableview.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     [_tableview registerClass:[YLBannerNavTableViewCell class] forCellReuseIdentifier:NSStringFromClass([YLBannerNavTableViewCell class])];
+    [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([YLHomeActivityTableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([YLHomeActivityTableViewCell class])];
     [self.view addSubview:_tableview];
     [_tableview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
@@ -103,14 +105,20 @@
         }
         [cell setValue:self.mainDataModel.navArr forKey:@"navArr"];
         [cell setValue:self.mainDataModel.bannerArr forKey:@"bannerArr"];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+    }else if(indexPath.section == 1){
+        cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YLHomeActivityTableViewCell class])];
+        if (!cell) {
+            cell = [[YLHomeActivityTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([YLHomeActivityTableViewCell class])];
+        }
+        [cell setValue:self.mainDataModel.activity forKey:@"activityModel"];
     }else{
         cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
         if (!cell) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([UITableViewCell class])];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 

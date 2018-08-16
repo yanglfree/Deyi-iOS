@@ -12,6 +12,8 @@
 		354D820D21248884007600DC /* YLNavCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D820B21248884007600DC /* YLNavCollectionViewCell.m */; };
 		354D820E21248884007600DC /* YLNavCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D820C21248884007600DC /* YLNavCollectionViewCell.xib */; };
 		DA6A324D4BA57BC16F30D1D5 /* libPods-deyi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A38297D4F9C363FD3498BA1 /* libPods-deyi.a */; };
+		EC19410121251A7C00246111 /* YLHomeActivityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1940FF21251A7C00246111 /* YLHomeActivityCollectionViewCell.m */; };
+		EC19410221251A7C00246111 /* YLHomeActivityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC19410021251A7C00246111 /* YLHomeActivityCollectionViewCell.xib */; };
 		EC2368492111572600F486BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2368482111572600F486BA /* AppDelegate.m */; };
 		EC2368512111572700F486BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2368502111572700F486BA /* Assets.xcassets */; };
 		EC2368542111572700F486BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2368522111572700F486BA /* LaunchScreen.storyboard */; };
@@ -45,6 +47,8 @@
 		EC999FBA211452E20035444C /* ZJScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999FA2211452E20035444C /* ZJScrollPageView.m */; };
 		EC9CC913212427B50059C9B8 /* YLHomeRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CC912212427B50059C9B8 /* YLHomeRecommendViewController.m */; };
 		EC9CC916212427C20059C9B8 /* YLHomeTimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CC915212427C20059C9B8 /* YLHomeTimeLineViewController.m */; };
+		EC9CC91A212515E60059C9B8 /* YLHomeActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CC918212515E60059C9B8 /* YLHomeActivityTableViewCell.m */; };
+		EC9CC91B212515E60059C9B8 /* YLHomeActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9CC919212515E60059C9B8 /* YLHomeActivityTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,9 @@
 		354D820B21248884007600DC /* YLNavCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNavCollectionViewCell.m; sourceTree = "<group>"; };
 		354D820C21248884007600DC /* YLNavCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLNavCollectionViewCell.xib; sourceTree = "<group>"; };
 		98302274D955948A0D814F09 /* Pods-deyi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deyi.release.xcconfig"; path = "Pods/Target Support Files/Pods-deyi/Pods-deyi.release.xcconfig"; sourceTree = "<group>"; };
+		EC1940FE21251A7C00246111 /* YLHomeActivityCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeActivityCollectionViewCell.h; sourceTree = "<group>"; };
+		EC1940FF21251A7C00246111 /* YLHomeActivityCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeActivityCollectionViewCell.m; sourceTree = "<group>"; };
+		EC19410021251A7C00246111 /* YLHomeActivityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLHomeActivityCollectionViewCell.xib; sourceTree = "<group>"; };
 		EC2368442111572600F486BA /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2368472111572600F486BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC2368482111572600F486BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -126,6 +133,9 @@
 		EC9CC912212427B50059C9B8 /* YLHomeRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeRecommendViewController.m; sourceTree = "<group>"; };
 		EC9CC914212427C20059C9B8 /* YLHomeTimeLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeTimeLineViewController.h; sourceTree = "<group>"; };
 		EC9CC915212427C20059C9B8 /* YLHomeTimeLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeTimeLineViewController.m; sourceTree = "<group>"; };
+		EC9CC917212515E60059C9B8 /* YLHomeActivityTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeActivityTableViewCell.h; sourceTree = "<group>"; };
+		EC9CC918212515E60059C9B8 /* YLHomeActivityTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeActivityTableViewCell.m; sourceTree = "<group>"; };
+		EC9CC919212515E60059C9B8 /* YLHomeActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLHomeActivityTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +175,12 @@
 				354D820A21248884007600DC /* YLNavCollectionViewCell.h */,
 				354D820B21248884007600DC /* YLNavCollectionViewCell.m */,
 				354D820C21248884007600DC /* YLNavCollectionViewCell.xib */,
+				EC9CC917212515E60059C9B8 /* YLHomeActivityTableViewCell.h */,
+				EC9CC918212515E60059C9B8 /* YLHomeActivityTableViewCell.m */,
+				EC9CC919212515E60059C9B8 /* YLHomeActivityTableViewCell.xib */,
+				EC1940FE21251A7C00246111 /* YLHomeActivityCollectionViewCell.h */,
+				EC1940FF21251A7C00246111 /* YLHomeActivityCollectionViewCell.m */,
+				EC19410021251A7C00246111 /* YLHomeActivityCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +190,7 @@
 			children = (
 				EC2368462111572600F486BA /* deyi */,
 				EC2368452111572600F486BA /* Products */,
+				EC2368502111572700F486BA /* Assets.xcassets */,
 				EDB378E19412B9CED5E74D8F /* Pods */,
 				3191A7ED6F06BF4990783B8E /* Frameworks */,
 			);
@@ -207,7 +224,6 @@
 				EC23686E21115B0D00F486BA /* Resources */,
 				EC2368472111572600F486BA /* AppDelegate.h */,
 				EC2368482111572600F486BA /* AppDelegate.m */,
-				EC2368502111572700F486BA /* Assets.xcassets */,
 				EC2368522111572700F486BA /* LaunchScreen.storyboard */,
 				EC2368552111572700F486BA /* Info.plist */,
 				EC2368562111572700F486BA /* main.m */,
@@ -532,6 +548,7 @@
 				EC2368412111572600F486BA /* Frameworks */,
 				EC2368422111572600F486BA /* Resources */,
 				62BC6B8144667509D8DD3B2B /* [CP] Copy Pods Resources */,
+				FE227D37BF39AA38846C7730 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -582,7 +599,9 @@
 			files = (
 				EC2368542111572700F486BA /* LaunchScreen.storyboard in Resources */,
 				354D820E21248884007600DC /* YLNavCollectionViewCell.xib in Resources */,
+				EC9CC91B212515E60059C9B8 /* YLHomeActivityTableViewCell.xib in Resources */,
 				EC2368512111572700F486BA /* Assets.xcassets in Resources */,
+				EC19410221251A7C00246111 /* YLHomeActivityCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +644,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deyi/Pods-deyi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FE227D37BF39AA38846C7730 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-deyi/Pods-deyi-frameworks.sh",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-15/iOS/RevealServer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deyi/Pods-deyi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -632,6 +669,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9CC91A212515E60059C9B8 /* YLHomeActivityTableViewCell.m in Sources */,
 				EC999FB6211452E20035444C /* ZJContentView.m in Sources */,
 				353696AA21245AE700C38D1E /* YLMainDataModel.m in Sources */,
 				EC2368922112FE6F00F486BA /* YLMyViewController.m in Sources */,
@@ -650,6 +688,7 @@
 				EC23688521119BEC00F486BA /* YLUserDefaultConst.m in Sources */,
 				EC9CC916212427C20059C9B8 /* YLHomeTimeLineViewController.m in Sources */,
 				354D820921247ED2007600DC /* YLBannerNavTableViewCell.m in Sources */,
+				EC19410121251A7C00246111 /* YLHomeActivityCollectionViewCell.m in Sources */,
 				EC999FAB211452E20035444C /* TAAbstractDotView.m in Sources */,
 				EC999FB5211452E20035444C /* UIViewController+ZJScrollPageController.m in Sources */,
 				EC999FA6211452E20035444C /* UIView+SDExtension.m in Sources */,

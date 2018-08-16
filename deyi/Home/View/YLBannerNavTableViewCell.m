@@ -10,7 +10,16 @@
 #import "SDCycleScrollView.h"
 #import "YLNavCollectionViewCell.h"
 
-static CGFloat const COLLECTIONVIEW_CELL_HEIGHT = 60;
+static const CGFloat kLineSpacing = 5.f;   //item上下间距
+static const CGFloat kItemSpacing = 10.f;  //item左右距离
+static const NSInteger kRowNumber = 5;     //列数
+static const NSInteger kHorizontalNumber = 2;    //行数
+static const CGFloat kCellHeight  = 60.f;  //Cell高度
+static const CGFloat kCellWidth = 60.f;
+static const CGFloat kSectionMargin = 10.f; //section边距
+
+static const CGFloat kCollectionViewHeight = 160; //collectionview 高度
+
 
 @interface YLBannerNavTableViewCell()<UICollectionViewDelegate,UICollectionViewDataSource,SDCycleScrollViewDelegate>
 
@@ -37,7 +46,7 @@ static CGFloat const COLLECTIONVIEW_CELL_HEIGHT = 60;
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.sdCycleScrollView.mas_bottom);
         make.left.right.mas_equalTo(self);
-        make.height.mas_equalTo(160);
+        make.height.mas_equalTo(kCollectionViewHeight);
     }];
 }
 
@@ -54,9 +63,19 @@ static CGFloat const COLLECTIONVIEW_CELL_HEIGHT = 60;
 {
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.itemSize = CGSizeMake(50 , COLLECTIONVIEW_CELL_HEIGHT);
-        layout.minimumInteritemSpacing = 30;//item间距(最小值)
-        layout.minimumLineSpacing = 20;//行间距(最小值)
+        
+        //方案1  固定item大小，计算item左右间距和上下间距
+//        layout.minimumInteritemSpacing = (ScreenWidth - 2 * kSectionMargin - kItemNumber * kCellWidth) / (kItemNumber - 1);//item间距(最小值)
+//        layout.minimumLineSpacing = 160 - 2 * kCellHeight - 2 *kSectionMargin ;//行间距(最小值)
+//        layout.sectionInset = UIEdgeInsetsMake(kSectionMargin, kSectionMargin, kSectionMargin, kSectionMargin);//分别为上、左、下、右
+//        layout.itemSize = CGSizeMake(kCellWidth, kCellHeight);
+        
+        //方案2 固定间距，计算item大小
+        layout.minimumInteritemSpacing = kItemSpacing;
+        layout.minimumLineSpacing = kLineSpacing;
+        layout.sectionInset = UIEdgeInsetsMake(kSectionMargin, kSectionMargin, kSectionMargin, kSectionMargin);//分别为上、左、下、右
+        layout.itemSize = CGSizeMake((ScreenWidth - 2 * kSectionMargin - (kRowNumber - 1) * kItemSpacing) / kRowNumber, (kCollectionViewHeight - 2*kSectionMargin - (kHorizontalNumber - 1) * kLineSpacing) / kHorizontalNumber);
+        
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         _collectionView.backgroundColor = [UIColor whiteColor];
         _collectionView.delegate = self;
