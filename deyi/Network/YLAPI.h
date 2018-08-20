@@ -13,4 +13,6 @@
 extern NSString *const API_ServiceUrlDomain;
 extern NSString *const API_HOME_RECOMMEND;
 
+extern NSString *const API_BBS_SECTION;
+
 @end

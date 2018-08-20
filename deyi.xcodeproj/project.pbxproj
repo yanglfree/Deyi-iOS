@@ -11,6 +11,11 @@
 		354D820921247ED2007600DC /* YLBannerNavTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D820821247ED2007600DC /* YLBannerNavTableViewCell.m */; };
 		354D820D21248884007600DC /* YLNavCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D820B21248884007600DC /* YLNavCollectionViewCell.m */; };
 		354D820E21248884007600DC /* YLNavCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D820C21248884007600DC /* YLNavCollectionViewCell.xib */; };
+		354D82142125A3BF007600DC /* YLBBSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D82132125A3BF007600DC /* YLBBSViewController.xib */; };
+		354D82182125A6BD007600DC /* YLSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D82172125A6BD007600DC /* YLSectionModel.m */; };
+		354D821D2125AAEF007600DC /* YLBBSSectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D821B2125AAEF007600DC /* YLBBSSectionTableViewCell.m */; };
+		354D821E2125AAEF007600DC /* YLBBSSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D821C2125AAEF007600DC /* YLBBSSectionTableViewCell.xib */; };
+		354D82212125BE14007600DC /* YLRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D82202125BE14007600DC /* YLRefreshTableView.m */; };
 		DA6A324D4BA57BC16F30D1D5 /* libPods-deyi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A38297D4F9C363FD3498BA1 /* libPods-deyi.a */; };
 		EC19410121251A7C00246111 /* YLHomeActivityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1940FF21251A7C00246111 /* YLHomeActivityCollectionViewCell.m */; };
 		EC19410221251A7C00246111 /* YLHomeActivityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC19410021251A7C00246111 /* YLHomeActivityCollectionViewCell.xib */; };
@@ -66,6 +71,14 @@
 		354D820A21248884007600DC /* YLNavCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNavCollectionViewCell.h; sourceTree = "<group>"; };
 		354D820B21248884007600DC /* YLNavCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNavCollectionViewCell.m; sourceTree = "<group>"; };
 		354D820C21248884007600DC /* YLNavCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLNavCollectionViewCell.xib; sourceTree = "<group>"; };
+		354D82132125A3BF007600DC /* YLBBSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLBBSViewController.xib; sourceTree = "<group>"; };
+		354D82162125A6BD007600DC /* YLSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YLSectionModel.h; path = deyi/BBS/Controller/YLSectionModel.h; sourceTree = SOURCE_ROOT; };
+		354D82172125A6BD007600DC /* YLSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YLSectionModel.m; path = deyi/BBS/Controller/YLSectionModel.m; sourceTree = SOURCE_ROOT; };
+		354D821A2125AAEF007600DC /* YLBBSSectionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBBSSectionTableViewCell.h; sourceTree = "<group>"; };
+		354D821B2125AAEF007600DC /* YLBBSSectionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBBSSectionTableViewCell.m; sourceTree = "<group>"; };
+		354D821C2125AAEF007600DC /* YLBBSSectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLBBSSectionTableViewCell.xib; sourceTree = "<group>"; };
+		354D821F2125BE14007600DC /* YLRefreshTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRefreshTableView.h; sourceTree = "<group>"; };
+		354D82202125BE14007600DC /* YLRefreshTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRefreshTableView.m; sourceTree = "<group>"; };
 		98302274D955948A0D814F09 /* Pods-deyi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deyi.release.xcconfig"; path = "Pods/Target Support Files/Pods-deyi/Pods-deyi.release.xcconfig"; sourceTree = "<group>"; };
 		EC1940FE21251A7C00246111 /* YLHomeActivityCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeActivityCollectionViewCell.h; sourceTree = "<group>"; };
 		EC1940FF21251A7C00246111 /* YLHomeActivityCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeActivityCollectionViewCell.m; sourceTree = "<group>"; };
@@ -205,6 +218,25 @@
 				ECBAF14C21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.h */,
 				ECBAF14D21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.m */,
 				ECBAF14E21255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		354D82152125A6A0007600DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				354D82162125A6BD007600DC /* YLSectionModel.h */,
+				354D82172125A6BD007600DC /* YLSectionModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		354D82192125AACD007600DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				354D821A2125AAEF007600DC /* YLBBSSectionTableViewCell.h */,
+				354D821B2125AAEF007600DC /* YLBBSSectionTableViewCell.m */,
+				354D821C2125AAEF007600DC /* YLBBSSectionTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -439,9 +471,9 @@
 		EC23687421115B0D00F486BA /* BBS */ = {
 			isa = PBXGroup;
 			children = (
+				354D82192125AACD007600DC /* View */,
+				354D82152125A6A0007600DC /* Model */,
 				EC23687521115B0D00F486BA /* Controller */,
-				EC23687621115B0D00F486BA /* Model */,
-				EC23687721115B0D00F486BA /* View */,
 			);
 			path = BBS;
 			sourceTree = "<group>";
@@ -451,22 +483,9 @@
 			children = (
 				EC23688D2112FE5100F486BA /* YLBBSViewController.h */,
 				EC23688E2112FE5100F486BA /* YLBBSViewController.m */,
+				354D82132125A3BF007600DC /* YLBBSViewController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		EC23687621115B0D00F486BA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		EC23687721115B0D00F486BA /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		EC23687B21115D6C00F486BA /* Const */ = {
@@ -485,6 +504,8 @@
 				EC236898211313F100F486BA /* YLBaseTabBarController.m */,
 				EC2368A0211315DF00F486BA /* YLBaseNavgationViewController.h */,
 				EC2368A1211315DF00F486BA /* YLBaseNavgationViewController.m */,
+				354D821F2125BE14007600DC /* YLRefreshTableView.h */,
+				354D82202125BE14007600DC /* YLRefreshTableView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -624,6 +645,8 @@
 				EC2368542111572700F486BA /* LaunchScreen.storyboard in Resources */,
 				354D820E21248884007600DC /* YLNavCollectionViewCell.xib in Resources */,
 				EC9CC91B212515E60059C9B8 /* YLHomeActivityTableViewCell.xib in Resources */,
+				354D82142125A3BF007600DC /* YLBBSViewController.xib in Resources */,
+				354D821E2125AAEF007600DC /* YLBBSSectionTableViewCell.xib in Resources */,
 				EC2368512111572700F486BA /* Assets.xcassets in Resources */,
 				ECBAF15021255C0F0083CE87 /* YLHomeRecommendMultiImageTableViewCell.xib in Resources */,
 				ECBAF14B21255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.xib in Resources */,
@@ -700,6 +723,7 @@
 				EC999FB6211452E20035444C /* ZJContentView.m in Sources */,
 				353696AA21245AE700C38D1E /* YLMainDataModel.m in Sources */,
 				EC2368922112FE6F00F486BA /* YLMyViewController.m in Sources */,
+				354D82212125BE14007600DC /* YLRefreshTableView.m in Sources */,
 				EC999FA8211452E20035444C /* TADotView.m in Sources */,
 				EC23689C211314CE00F486BA /* YLStoreViewController.m in Sources */,
 				EC999FB4211452E20035444C /* ZJTitleView.m in Sources */,
@@ -726,6 +750,7 @@
 				EC236899211313F100F486BA /* YLBaseTabBarController.m in Sources */,
 				EC23687A21115D4600F486BA /* YLNetwork.m in Sources */,
 				EC999FA9211452E20035444C /* TAPageControl.m in Sources */,
+				354D821D2125AAEF007600DC /* YLBBSSectionTableViewCell.m in Sources */,
 				EC999FB7211452E20035444C /* ZJCollectionView.m in Sources */,
 				EC23689F211314E200F486BA /* YLTimelineViewController.m in Sources */,
 				EC999FB8211452E20035444C /* ZJSegmentStyle.m in Sources */,
@@ -734,6 +759,7 @@
 				EC2368572111572700F486BA /* main.m in Sources */,
 				EC999F712114506A0035444C /* WSegmentView.m in Sources */,
 				EC2368492111572600F486BA /* AppDelegate.m in Sources */,
+				354D82182125A6BD007600DC /* YLSectionModel.m in Sources */,
 				EC9CC913212427B50059C9B8 /* YLHomeRecommendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

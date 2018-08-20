@@ -12,5 +12,6 @@
 
 NSString *const API_ServiceUrlDomain = @"http://newapi.deyi.com/";
 NSString *const API_HOME_RECOMMEND = @"app/index/home";
+NSString *const API_BBS_SECTION = @"forum/board/getboardlist";
 
 @end
