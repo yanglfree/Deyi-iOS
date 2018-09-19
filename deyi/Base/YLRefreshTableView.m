@@ -34,7 +34,7 @@
     MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         
     }];
-    self.mj_footer = footer
+    self.mj_footer = footer;
 }
 
 @end

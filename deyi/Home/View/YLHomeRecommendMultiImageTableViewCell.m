@@ -8,6 +8,7 @@
 
 #import "YLHomeRecommendMultiImageTableViewCell.h"
 #import "YLMainDataModel.h"
+#import "NSDate+WHDate.h"
 
 @interface YLHomeRecommendMultiImageTableViewCell()
 
@@ -38,7 +39,7 @@
     [_pic2ImageView sd_setImageWithURL:[NSURL URLWithString:recommendMultiListModel.moreimgs[1]] placeholderImage:PLACEHOLDER_IMAGE];
     [_pic3ImageView sd_setImageWithURL:[NSURL URLWithString:recommendMultiListModel.moreimgs[2]] placeholderImage:PLACEHOLDER_IMAGE];
     [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:recommendMultiListModel.uavatar] placeholderImage:PLACEHOLDER_IMAGE];
-    _nameAndDateLabel.text = [NSString stringWithFormat:@"%@ . %@",recommendMultiListModel.username,recommendMultiListModel.thread_time];
+    _nameAndDateLabel.text = [NSString stringWithFormat:@"%@ . %@",recommendMultiListModel.username,[NSDate timeInfoWithDate:[NSDate dateWithTimeIntervalSince1970:[recommendMultiListModel.thread_time doubleValue]]]];
 }
 
 @end

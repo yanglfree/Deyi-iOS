@@ -34,6 +34,8 @@
 		EC23689C211314CE00F486BA /* YLStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23689B211314CE00F486BA /* YLStoreViewController.m */; };
 		EC23689F211314E200F486BA /* YLTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC23689E211314E200F486BA /* YLTimelineViewController.m */; };
 		EC2368A2211315DF00F486BA /* YLBaseNavgationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2368A1211315DF00F486BA /* YLBaseNavgationViewController.m */; };
+		EC8B013A21524F32009E234A /* NSDate+WHDate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8B013921524F32009E234A /* NSDate+WHDate.m */; };
+		EC8B013D21524FDA009E234A /* Foundation+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8B013C21524FDA009E234A /* Foundation+Safe.m */; };
 		EC999F712114506A0035444C /* WSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F6F211450690035444C /* WSegmentView.m */; };
 		EC999FA5211452E20035444C /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F77211452E10035444C /* SDCycleScrollView.m */; };
 		EC999FA6211452E20035444C /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC999F78211452E10035444C /* UIView+SDExtension.m */; };
@@ -115,6 +117,10 @@
 		EC2368A1211315DF00F486BA /* YLBaseNavgationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBaseNavgationViewController.m; sourceTree = "<group>"; };
 		EC2368A3211316FF00F486BA /* Maroco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maroco.h; sourceTree = "<group>"; };
 		EC7CB3C380570173C24CFE23 /* Pods-deyi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deyi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deyi/Pods-deyi.debug.xcconfig"; sourceTree = "<group>"; };
+		EC8B013821524F32009E234A /* NSDate+WHDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WHDate.h"; sourceTree = "<group>"; };
+		EC8B013921524F32009E234A /* NSDate+WHDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WHDate.m"; sourceTree = "<group>"; };
+		EC8B013B21524FDA009E234A /* Foundation+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+Safe.h"; sourceTree = "<group>"; };
+		EC8B013C21524FDA009E234A /* Foundation+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Safe.m"; sourceTree = "<group>"; };
 		EC999F6F211450690035444C /* WSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSegmentView.m; sourceTree = "<group>"; };
 		EC999F702114506A0035444C /* WSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSegmentView.h; sourceTree = "<group>"; };
 		EC999F74211452E10035444C /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
@@ -263,11 +269,11 @@
 		EC2368462111572600F486BA /* deyi */ = {
 			isa = PBXGroup;
 			children = (
+				EC8B013721524F32009E234A /* Categary */,
 				EC999F72211452C10035444C /* Verdor */,
 				EC236896211313C400F486BA /* Base */,
 				EC23687B21115D6C00F486BA /* Const */,
 				EC23687421115B0D00F486BA /* BBS */,
-				EC23686121115B0C00F486BA /* Categary */,
 				EC23685F21115B0C00F486BA /* Common */,
 				EC23686021115B0C00F486BA /* DB */,
 				EC23687021115B0D00F486BA /* Home */,
@@ -322,13 +328,6 @@
 			children = (
 			);
 			path = DB;
-			sourceTree = "<group>";
-		};
-		EC23686121115B0C00F486BA /* Categary */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categary;
 			sourceTree = "<group>";
 		};
 		EC23686221115B0C00F486BA /* Store */ = {
@@ -508,6 +507,17 @@
 				354D82202125BE14007600DC /* YLRefreshTableView.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		EC8B013721524F32009E234A /* Categary */ = {
+			isa = PBXGroup;
+			children = (
+				EC8B013B21524FDA009E234A /* Foundation+Safe.h */,
+				EC8B013C21524FDA009E234A /* Foundation+Safe.m */,
+				EC8B013821524F32009E234A /* NSDate+WHDate.h */,
+				EC8B013921524F32009E234A /* NSDate+WHDate.m */,
+			);
+			path = Categary;
 			sourceTree = "<group>";
 		};
 		EC999F72211452C10035444C /* Verdor */ = {
@@ -736,6 +746,7 @@
 				EC999FA5211452E20035444C /* SDCycleScrollView.m in Sources */,
 				ECBAF140212557220083CE87 /* YLHomeRecommendAdTableViewCell.m in Sources */,
 				EC2368A2211315DF00F486BA /* YLBaseNavgationViewController.m in Sources */,
+				EC8B013D21524FDA009E234A /* Foundation+Safe.m in Sources */,
 				ECBAF14A21255BFA0083CE87 /* YLHomeRecommendSingleImageTableViewCell.m in Sources */,
 				EC999FAA211452E20035444C /* TAAnimatedDotView.m in Sources */,
 				EC23688521119BEC00F486BA /* YLUserDefaultConst.m in Sources */,
@@ -752,6 +763,7 @@
 				EC999FA9211452E20035444C /* TAPageControl.m in Sources */,
 				354D821D2125AAEF007600DC /* YLBBSSectionTableViewCell.m in Sources */,
 				EC999FB7211452E20035444C /* ZJCollectionView.m in Sources */,
+				EC8B013A21524F32009E234A /* NSDate+WHDate.m in Sources */,
 				EC23689F211314E200F486BA /* YLTimelineViewController.m in Sources */,
 				EC999FB8211452E20035444C /* ZJSegmentStyle.m in Sources */,
 				EC999FBA211452E20035444C /* ZJScrollPageView.m in Sources */,
